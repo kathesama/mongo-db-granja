@@ -96,7 +96,7 @@ Luego de ejecutar el script nos queda la siguiente estructura:
 -v $(pwd)/config:/data/config \
 -e MONGO_INITDB_ROOT_USERNAME=YOURMONGOADMINNAME \
 -e MONGO_INITDB_ROOT_PASSWORD=MONGONADMINSECRET \
-mongo:4.4.4-bionic \
+mongo:4.4.14 \
 mongod --config /data/config/serverCluster.conf
 ```
 ---
@@ -113,7 +113,7 @@ sudo docker run --name MGDB_replica02 \
 -v $(pwd)/config:/data/config \
 -e MONGO_INITDB_ROOT_USERNAME=YOURMONGOADMINNAME \
 -e MONGO_INITDB_ROOT_PASSWORD=MONGONADMINSECRET \
-mongo:4.4.4-bionic \
+mongo:4.4.14 \
 mongod --config /data/config/serverCluster.conf
 ```
 ---
@@ -130,7 +130,7 @@ sudo docker run --name MGDB_replicaArbiter \
 -v $(pwd)/config:/data/config \
 -e MONGO_INITDB_ROOT_USERNAME=YOURMONGOADMINNAME \
 -e MONGO_INITDB_ROOT_PASSWORD=MONGONADMINSECRET \
-mongo:4.4.4-bionic \
+mongo:4.4.14 \
 mongod --config /data/config/serverCluster.conf
 ```
 ---
